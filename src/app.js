@@ -13,12 +13,6 @@ var app ={
     subtitle: 'Created by Darique Warren',
     options: ['one', 'two']
 }
-// function optionsList(list){
-// var i = 0
-// for(i;list.length;i++){
-//    return <li>list[i]</li>
-// }
-
   
         
 // }
@@ -28,19 +22,13 @@ var template = (
     {app.subtitle && <p>{app.subtitle}</p>}
     <p>{app.options.length > 0 ? 'Here are your options' : 'no options'}</p>
     <ol>
-    <li>one</li>
-    <li>two</li>
+    <li>uno y</li>
+    <li>dos y tres</li>
     </ol>
   </div>
 );
 var appRoot = document.getElementById("app");
 
-// create template2 variablejsx expression
-//      div
-//          h1 ---> your name
-//          p ---> age: myage
-//          p ---> location: my location
-// render template two instead of tem[;ate]
 var user = {
     userName : "Darique Warren",
     userAge : 32,
