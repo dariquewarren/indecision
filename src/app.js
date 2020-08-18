@@ -8,7 +8,7 @@ console.log("app.js is running");
 // only render subtitle and p tag if subtitle exists - logical & operator
 // render new p tag - if oprions. length > 0 "here are your options" "no options"
 
-var app ={
+let app ={
     title: 'Indecision App',
     subtitle: 'Created by Darique Warren',
     options: ['one', 'two']
@@ -16,7 +16,7 @@ var app ={
   
         
 // }
-var template = (
+let template = (
   <div>
     <h1>{app.title}</h1>
     {app.subtitle && <p>{app.subtitle}</p>}
@@ -27,9 +27,9 @@ var template = (
     </ol>
   </div>
 );
-var appRoot = document.getElementById("app");
+const appRoot = document.getElementById("app");
 
-var user = {
+let user = {
     userName : "Darique Warren",
     userAge : 32,
  userLocation : "harlem",
@@ -41,7 +41,7 @@ return <p>Location: {location}</p>
 }
 
 
-var template2 = (
+let template2 = (
   <div>
     <h1>{user.userName ? user.userName : 'ANON'}</h1>
 {user.userAge && user.userAge >= 18 && <p>Age: {user.userAge}</p>}    
