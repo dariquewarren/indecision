@@ -1,51 +1,70 @@
-console.log("app.js is running");
+class IndecisionApp extends React.Component{
+  render(){
+    return (
+      <div>
+      <Header/>
+      <Action/>
+      <Options/>
+      <AddOption/>
 
-// JSX- JVASCRIPT XML
-// create app object title/subtitle
-// use title and subtitle in the template
-// render template
-
-// only render subtitle and p tag if subtitle exists - logical & operator
-// render new p tag - if oprions. length > 0 "here are your options" "no options"
-
-let app ={
-    title: 'Indecision App',
-    subtitle: 'Created by Darique Warren',
-    options: ['one', 'two']
-}
-  
-        
-// }
-let template = (
-  <div>
-    <h1>{app.title}</h1>
-    {app.subtitle && <p>{app.subtitle}</p>}
-    <p>{app.options.length > 0 ? 'Here are your options' : 'no options'}</p>
-    <ol>
-    <li>uno y</li>
-    <li>dos y tres</li>
-    </ol>
-  </div>
-);
-const appRoot = document.getElementById("app");
-
-let user = {
-    userName : "Darique Warren",
-    userAge : 32,
- userLocation : "harlem",
-}
-function getLocation(location) {
-if(location){
-return <p>Location: {location}</p>
-}
+      </div>
+    )
+  }
 }
 
 
-let template2 = (
-  <div>
-    <h1>{user.userName ? user.userName : 'ANON'}</h1>
-{user.userAge && user.userAge >= 18 && <p>Age: {user.userAge}</p>}    
-    {getLocation(user.userLocation)}
-  </div>
-);
-ReactDOM.render(template, appRoot);
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Indecision</h1>
+        <h2>put your life in the hands of a coumputer</h2>
+      </div>
+    );
+  }
+}
+
+class Action extends React.Component {
+  render() {
+    return (
+      <div>
+        <button>what should i don?</button>
+      </div>
+    );
+  }
+}
+// options class-> options componenet here-> render under action
+// add acction componenet -> addoption compenent here-> render under options
+class Options extends React.Component {
+  render() {
+    return (
+      <div>
+        options compenent Header
+        <Option/>
+      </div>
+    );
+  }
+}
+
+class Option extends React.Component{
+  render(){
+    return (
+      <div>
+      <p>option componenet goes here</p>
+      </div>
+    )
+  }
+}
+
+class AddOption extends React.Component {
+  render() {
+    return (
+      <div>
+        <p>addOption component here</p>
+      </div>
+    );
+  }
+}
+
+
+ReactDOM.render(<IndecisionApp/>, document.getElementById("app"));
