@@ -15,3 +15,13 @@ return true
     return false
 }
 }
+const isSenior =(x)=> x > 64 ? true : false
+// const isSenior=(x)=>{
+//     if(x < 65){
+//         return false
+
+//     }
+//     return true
+// }
+
+export default isSenior

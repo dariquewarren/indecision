@@ -12,7 +12,8 @@
     "babel": "^6.23.0",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "validator": "8.0.0"
   },
   "repository": "https://github.com/dariquewarren/indecision.git",
   "author": "Darique Warren <60529780+dariquewarren@users.noreply.github.com>",
