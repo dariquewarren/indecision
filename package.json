@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
-    "build":"webpack",
-    "build-babel":"babel src/app.js --out-file=public/scripts/app.js --presets=env,react"
+    "build": "webpack",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react"
   },
   "dependencies": {
     "babel": "^6.23.0",
@@ -14,5 +14,9 @@
     "babel-preset-react": "6.24.1"
   },
   "repository": "https://github.com/dariquewarren/indecision.git",
-  "author": "Darique Warren <60529780+dariquewarren@users.noreply.github.com>"
+  "author": "Darique Warren <60529780+dariquewarren@users.noreply.github.com>",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
 }
