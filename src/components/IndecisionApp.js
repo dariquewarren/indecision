@@ -88,6 +88,7 @@ return({selectedOption: option
       return (
         <div>
           <Header subTitle={subTitle} />
+          <div className="container">
           <Action
             hasOptions={this.state.options.length > 0}
             handlePick={this.handlePick}
@@ -98,6 +99,8 @@ return({selectedOption: option
             handleDeleteOption={this.handleDeleteOption}
           />
           <AddOption handleAddOption={this.handleAddOption} />
+          
+          </div>
           <OptionModal 
           selectedOption={this.state.selectedOption}
           handleCloseModal ={this.handleCloseModal}
