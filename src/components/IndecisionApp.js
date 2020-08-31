@@ -93,11 +93,14 @@ return({selectedOption: option
             hasOptions={this.state.options.length > 0}
             handlePick={this.handlePick}
           />
+          <div className="widget">
           <Options
             options={this.state.options}
             handleDeleteOptions={this.handleDeleteOptions}
             handleDeleteOption={this.handleDeleteOption}
           />
+          </div>
+          
           <AddOption handleAddOption={this.handleAddOption} />
           
           </div>

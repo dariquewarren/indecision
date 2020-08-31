@@ -1,0 +1,34 @@
+// widget header
+.widget{
+    background: $light-blue;
+    margin-bottom: $xl-size;
+}
+// create a widget elemetn selector(mesage)
+// use it on p tag
+// setupstyles
+//  offwhite color---no margin---l size padding on all sides
+//center text using text align : center
+//      set bottom border to a 1 px solid border color of border = lightened version of lightblue 10%
+.widget__message {
+    border-bottom: 1px solid lighten($light-blue, 10);
+    color: $off-white;
+    margin: 0;
+    padding: $l-size;
+    text-align: center;
+    
+
+}
+.widget-header{
+    background: $blue;
+    color: $off-white;
+    display: flex;
+    justify-content: space-between;
+    padding: $m-size;
+}
+.widget-header__title{
+    margin: 0;
+    
+}
+// setup an element selector named title to the woidget header
+// set margin to 0
+// use the class
