@@ -99,9 +99,10 @@ return({selectedOption: option
             handleDeleteOptions={this.handleDeleteOptions}
             handleDeleteOption={this.handleDeleteOption}
           />
+          <AddOption handleAddOption={this.handleAddOption} />
           </div>
           
-          <AddOption handleAddOption={this.handleAddOption} />
+         
           
           </div>
           <OptionModal 
