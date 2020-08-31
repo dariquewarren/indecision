@@ -31,22 +31,9 @@ class IndecisionApp extends React.Component {
       let pickNumber = Math.floor(Math.random() * this.state.options.length);
       let option = this.state.options[pickNumber];
    // use set state to set selected option
-   this.setState(()=>{
-return({selectedOption: option
-})
-   })
+   this.setState(()=>({selectedOption: option}))
+   console.log('what should i do?')
     }
-
-    handleCloseModal=()=>{
-        this.setState(()=>{
-            return(
-                {
-                    selectedOption: undefined
-                }
-            )
-        })
-    }
-
     handleAddOption=(option) =>{
       if (!option) {
         return "enter valid value to add item";
@@ -57,6 +44,10 @@ return({selectedOption: option
         options: prevState.options.concat([option]),
       }));
     }
+  handleCloseModal= () => {
+    this.setState(() => ({ selectedOption: undefined }));
+  }
+    
   
 
     componentDidMount() {
@@ -83,8 +74,7 @@ return({selectedOption: option
     
 
     render() {
-      const title = "Indecision App";
-      const subTitle = "Put your life in hands of computer";
+     const subTitle = "Put your life in hands of computer";
       return (
         <div>
           <Header subTitle={subTitle} />
@@ -101,14 +91,14 @@ return({selectedOption: option
           />
           <AddOption handleAddOption={this.handleAddOption} />
           </div>
-          
-         
-          
           </div>
+         
           <OptionModal 
           selectedOption={this.state.selectedOption}
           handleCloseModal ={this.handleCloseModal}
           />
+          
+          
         </div>
       );
     }
