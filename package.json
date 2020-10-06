@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node public/bundle.js",
     "build": "webpack",
     "dev-server": "webpack-dev-server"
   },
