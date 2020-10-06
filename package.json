@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node public/bundle.js",
-    "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "start": "node src/app.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "add": "^2.0.6",
